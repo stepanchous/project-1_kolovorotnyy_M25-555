@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
 
+
 def main() -> None:
-    print("Hello, World!")
+    print('Hello, World!')

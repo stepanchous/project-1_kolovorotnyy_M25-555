@@ -21,3 +21,19 @@ packages = [
 
 [tool.poetry.scripts]
 project = "labyrinth_game.main:main"
+
+[tool.poetry.group.dev.dependencies]
+ruff = ">=0.13.2,<0.14.0"
+
+[tool.ruff]
+line-length = 80
+target-version = "py311"
+exclude = ["venv", ".venv", "dist", "__pycache__"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I"]
+ignore = []
+
+[tool.ruff.format]
+quote-style = "single"
+skip-magic-trailing-comma = false
